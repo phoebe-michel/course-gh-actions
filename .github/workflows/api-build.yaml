@@ -17,6 +17,8 @@ jobs:
       - run: dotnet --list-sdks
       - run: dotnet build
         working-directory: ./api
+      - run: dotnet test
+        working-directory: ./api
 # *** notes:
 # steps[*].working-directory: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsworking-directory
 # path filter globs: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
