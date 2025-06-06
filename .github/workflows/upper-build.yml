@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - run: pwd && ls -al # print out current directory and list files
       - uses: actions/checkout@v4
